@@ -1,26 +1,26 @@
 # SonarQube Rules Exporter
 
-## 项目概述
+## Overview
 
-SonarQube Rules Exporter 是一个 Python 脚本，用于从 SonarQube 的不同编程语言规则页面抓取静态代码分析规则，并将其导出为 Excel 文件。此脚本支持多种编程语言，方便用户快速获取和分析 SonarQube 规则。
+The SonarQube Rules Exporter is a Python script designed to scrape static code analysis rules from SonarQube's web pages for various programming languages and export them into Excel files. This script supports multiple languages, making it easy for users to quickly gather and analyze SonarQube rules.
 
-## 功能
+## Features
 
-- 支持多种编程语言的 SonarQube 规则导出。
-- 将规则导出为结构化的 Excel 文件。
-- 自动编号导出的规则，便于参考和分析。
+- Supports exporting SonarQube rules for multiple programming languages.
+- Exports rules into structured Excel files.
+- Automatically numbers the exported rules for easy reference and analysis.
 
-## 如何使用
+## Usage
 
-1. 确保您的环境中已安装 Python 以及以下依赖库：
+1. Ensure Python and the following libraries are installed in your environment:
    - `requests`
-   - `beautifulsoup4` (或 `bs4`)
+   - `beautifulsoup4` (or `bs4`)
    - `pandas`
    - `openpyxl`
 
-2. 运行脚本前，根据需要修改或确认脚本中的 URL。
+2. Before running the script, modify or verify the URLs in the script as needed.
 
-3. 使用以下命令运行脚本：
+3. To run the script, use the following command:
 
    ```bash
    python sonar_rules_exporter.py
